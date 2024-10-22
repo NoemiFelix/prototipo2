@@ -30,3 +30,7 @@ h3{
     border-radius: 2rem;
     border: #212529 1px solid;
 }
+.mapa-button{
+    display: flex;
+    flex-direction: row-reverse;
+}

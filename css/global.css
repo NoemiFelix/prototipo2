@@ -42,6 +42,14 @@ header{
     padding: 10px;
     font-size: 18px;
 }
+.informadados{
+    
+    border-radius: none;
+    border: #8d8d8d none;
+    height: 36px;
+    padding: 10px;
+    font-size: 18px;
+}
 .info{
     display: flex;
     align-items: center;
