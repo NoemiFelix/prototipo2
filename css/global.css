@@ -1,0 +1,50 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32;
+    color: #fff;
+}
+.container{
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100vw;
+    height: 160px;
+    background-color: #ff7b00;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    box-shadow: 15px 19px 21px -2px rgba(0,0,0,0.45);
+    -webkit-box-shadow: 15px 19px 21px -2px rgba(0,0,0,0.45);
+    -moz-box-shadow: 15px 19px 21px -2px rgba(0,0,0,0.45);
+}
+.botoes{
+    border-radius: 2rem;
+    width: 15%;
+}
+.btncadastrar{
+    width: 170px;
+    border-radius: 30px;
+}
+.inseredados{
+    border-radius: 1rem;
+    border: #8d8d8d 1px solid;
+    height: 36px;
+    padding: 10px;
+    font-size: 18px;
+}
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
