@@ -31,18 +31,9 @@ header{
     border-radius: 2rem;
     width: 15%;
 }
-
 .inseredados{
     border-radius: 1rem;
     border: #8d8d8d 1px solid;
-    height: 36px;
-    padding: 10px;
-    font-size: 18px;
-}
-.informadados{
-    
-    border-radius: none;
-    border: #8d8d8d none;
     height: 36px;
     padding: 10px;
     font-size: 18px;
