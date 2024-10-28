@@ -26,17 +26,29 @@ h3{
     padding: .2rem;
     border-radius: .5rem;
 }
-.text{
-    border-radius: 2rem;
-    border: #212529 1px solid;
+.informative-text{
+    height: 38px;
+    font-size: 18px;
 }
-.info-button{
+.informa-button{
     display: flex;
-    flex-direction: row-reverse;
+    justify-content: right;
+    flex-direction: row;
+    align-items: normal;
+    margin-top: 200px;
+}
+.btncadastrar{
+    width: 170px;
+    border-radius: 30px;
 }
 .info-register{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100vw;
+}
+.informa-video{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
 }

@@ -36,3 +36,9 @@ h3{
     border-radius: 30px;
     gap: 30px;
 }
+.informa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
