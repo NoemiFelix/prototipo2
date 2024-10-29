@@ -26,6 +26,13 @@ h3{
     padding: .2rem;
     border-radius: .5rem;
 }
+.inseredados-feedback{
+    border-radius: 1rem;
+    border: #8d8d8d 1px solid;
+    height: 200px;
+    padding: 10px;
+    font-size: 18px;
+}
 .feed-button{
     display: flex;
     border-radius: 30px;
