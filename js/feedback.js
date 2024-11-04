@@ -41,8 +41,6 @@ function mostrar(descricao){
 /* LIMPAR AS INPUTS E SELECTS PARA PODER DIGITAR DE NUEVO */
 function limpar(){
   document.querySelector('#descricao').value= '';
-  
-
 }
 
 
@@ -50,7 +48,7 @@ function limpar(){
 document.querySelector('#btnenviar').onclick = function(evt){
 
   var nome = document.querySelector('#descricao').value;
-  var usuario = new Cadastro(descricao);
+  var usuario = new Feedback(descricao);
   salvar.push(usuario);
   usuario.mensagem();
   carregar();	
@@ -62,7 +60,7 @@ document.querySelector('#btnenviar').onclick = function(evt){
 
 /* INFORMAÇÕES DO ICONE INFO */
 document.querySelector('#info').onclick = function(evt){
-  alert("Sistema desenvolvido pelos estudantes do Instituto Federal de Mato Grosso do Sul para as disciplinas de Linguagem de Apresentação e Estruturação de Conteúdos 2 e Programação Orientada a Objetos 2" + "\n" + "\n" + "By:" + "\n" + "William Medeiros" + "\n" + "Liliane Dauzacker");
+  alert("Funciona");
 }
 
 
