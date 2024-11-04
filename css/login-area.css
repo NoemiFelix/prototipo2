@@ -30,10 +30,11 @@ h3{
     border-radius: 4rem;
     border: #fb8500 1px solid;
 }
-.botoes{
-    border-radius: 2rem;
-    width: 15%;
-}
 .grupo-botoes{
     justify-content: space-evenly;
+}
+.botoes{
+    border-radius: 2rem;
+    width: 18%;
+    
 }

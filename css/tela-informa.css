@@ -36,14 +36,11 @@ h3{
 }
 .informa-button{
     display: flex;
-    justify-content: right;
+    justify-content: space-between;
 }
 .btninformar{
     width: 170px;
     border-radius: 30px;
-}
-.informa-button{
-    justify-content: space-between;
 }
 .informa-video{
     display: flex;
