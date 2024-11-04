@@ -1,14 +1,14 @@
 var salvar = new Array();
 
-class Login{
-  constructor(nome,senha ){
-    this.nome = nome;
-    this.senha = senha;
+class Feedback{
+  constructor(descricao ){
+    this.descricao = descricao;
+    
   }
 
   mensagem()
     {
-    alert("Login Efetuado!"+"\n"+"\n"+this.nome+"\n"+this.senha+"\n");
+    alert("Feedback Efetuado!"+"\n"+"\n"+this.descricao+"\n");
     }
 
 }
@@ -23,36 +23,34 @@ function carregar(){
     texto="";
     for(i=0;i<tamanho;i++)
     {
-     texto = texto+ '<li onclick="mostrar(' + salvar[i].cpf + ')">' + salvar[i].nome+"</li>";
+     texto = texto+ '<li onclick="mostrar(' + salvar[i].descricao + ')">' + salvar[i].nome+"</li>";
      }
   } 				
   else{
-    texto = "Nenhum login até o momento";
+    texto = "Nenhum feedback até o momento";
   }
 
   carrega.innerHTML = texto;
 }
 
-function mostrar(nome){
-  alert(nome);
+function mostrar(descricao){
+  alert(descricao);
 }
 
 
 /* LIMPAR AS INPUTS E SELECTS PARA PODER DIGITAR DE NUEVO */
 function limpar(){
-  document.querySelector('#nome').value= '';
-  document.querySelector('#senha').value= '';
+  document.querySelector('#descricao').value= '';
   
+
 }
 
 
 /* SALVAR OS CADASTROS REALIZADOS*/
-document.querySelector('#btnsalvar').onclick = function(evt){
+document.querySelector('#btnenviar').onclick = function(evt){
 
-  var nome = document.querySelector('#nome').value;
-  var cpf = document.querySelector('#senha').value;
-  
-  var usuario = new Login(nome,senha);
+  var nome = document.querySelector('#descricao').value;
+  var usuario = new Cadastro(descricao);
   salvar.push(usuario);
   usuario.mensagem();
   carregar();	
@@ -69,15 +67,15 @@ document.querySelector('#info').onclick = function(evt){
 
 
 /* FAZER A .HOME E A .CADASTRO SUMIR E APARECER*/
-document.querySelector('.login').style.display = 'none'
+document.querySelector('.feedback').style.display = 'none'
 
 document.querySelector('#add').onclick = function(evt){
-  document.querySelector('.login').style.display = 'block'
+  document.querySelector('.feedback').style.display = 'block'
   document.querySelector('.home').style.display = 'none'
 }
 
 document.querySelector('#voltar').onclick = function(evt){
-  document.querySelector('.login').style.display = 'none'
+  document.querySelector('.feedback').style.display = 'none'
   document.querySelector('.home').style.display = 'block'
 }
 

@@ -1,14 +1,16 @@
 var salvar = new Array();
 
-class Login{
-  constructor(nome,senha ){
+class Cadastro{
+  constructor(nome, email, telefone ){
     this.nome = nome;
-    this.senha = senha;
+    this.email = email;
+    this.telefone = telefone;
+    
   }
 
   mensagem()
     {
-    alert("Login Efetuado!"+"\n"+"\n"+this.nome+"\n"+this.senha+"\n");
+    alert("Cadastro Efetuado!"+"\n"+"\n"+this.nome+"\n"+this.email+"\n"+this.telefone+"\n");
     }
 
 }
@@ -27,7 +29,7 @@ function carregar(){
      }
   } 				
   else{
-    texto = "Nenhum login até o momento";
+    texto = "Nenhum cadastro até o momento";
   }
 
   carrega.innerHTML = texto;
@@ -41,8 +43,8 @@ function mostrar(nome){
 /* LIMPAR AS INPUTS E SELECTS PARA PODER DIGITAR DE NUEVO */
 function limpar(){
   document.querySelector('#nome').value= '';
-  document.querySelector('#senha').value= '';
-  
+  document.querySelector('#email').value= '';
+  document.querySelector('#telefone').value= '';
 }
 
 
@@ -50,9 +52,10 @@ function limpar(){
 document.querySelector('#btnsalvar').onclick = function(evt){
 
   var nome = document.querySelector('#nome').value;
-  var cpf = document.querySelector('#senha').value;
+  var email = document.querySelector('#email').value;
+  var telefone = document.querySelector('#telefone').value;
   
-  var usuario = new Login(nome,senha);
+  var usuario = new Cadastro(nome,email,telefone);
   salvar.push(usuario);
   usuario.mensagem();
   carregar();	
@@ -69,15 +72,15 @@ document.querySelector('#info').onclick = function(evt){
 
 
 /* FAZER A .HOME E A .CADASTRO SUMIR E APARECER*/
-document.querySelector('.login').style.display = 'none'
+document.querySelector('.cadastro').style.display = 'none'
 
 document.querySelector('#add').onclick = function(evt){
-  document.querySelector('.login').style.display = 'block'
+  document.querySelector('.cadastro').style.display = 'block'
   document.querySelector('.home').style.display = 'none'
 }
 
 document.querySelector('#voltar').onclick = function(evt){
-  document.querySelector('.login').style.display = 'none'
+  document.querySelector('.cadastro').style.display = 'none'
   document.querySelector('.home').style.display = 'block'
 }
 
