@@ -12,6 +12,13 @@ class Login{
     }
 
 }
+function login(){
+     const username = document.getElementById("username").value;
+     const password = document.getElementById("senha").value;
+     if (username == "moana" && senha == "707"){
+        window.location.href = "./informa.html";
+     }
+}
 
 
 /* LISTAGEM DOS CADASTROS NA .HOME*/
